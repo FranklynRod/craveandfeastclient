@@ -5,8 +5,10 @@ const RecipeList = (prop) => {
   console.log(prop)
   return (
     <div>
-      {prop.recipes.length? prop.recipes[0].label: null}
-      <Recipe/>
+      {prop.recipes.length? 
+        <Recipe prop={prop.recipes[0]}/>: 
+        null}
+
       </div>
     
 
