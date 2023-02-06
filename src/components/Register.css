@@ -6,12 +6,19 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(79deg,#DED1BD,#faf6f2,#D49E8D);
-
-
 }
 .auth-form-container, .register-form{
-    display:flex;
-    flex-direction: column;
+    display:flex; 
+    flex-direction: column;   
+    align-items: center;
+  /* justify-content: center; */
+}
+
+.register-form{
+    background: white;
+    padding:2rem;
+    border-radius: 10px;
+
 }
 
 label {
