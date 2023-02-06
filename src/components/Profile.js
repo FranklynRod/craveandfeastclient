@@ -1,8 +1,12 @@
+import { Favorite } from '@mui/icons-material'
 import React from 'react'
 
 const Profile = (prop) =>  {
   return (
-    <div>Profile</div>
+    <div>Profile
+      <Favorite/>
+    </div>
+    
   )
 }
 

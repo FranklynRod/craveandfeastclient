@@ -1,4 +1,5 @@
 import React, {useState, useRef, useEffect} from "react";
+import './Register.css'
 import axios from "axios";
 import {AiOutlineStop} from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
@@ -109,7 +110,7 @@ const Register = (props) => {
           <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
           <h1>Register</h1>
             <form className="register-form" onSubmit={handleSubmit}>
-                <label htmlFor="username">Username: 
+                <label htmlFor="username" >Username: 
                   <AiOutlineStop className={validName ? "valid" : "hide"} />
                   <AiOutlineStop className={validName || !user ? "hide" : "invalid"} />
                 </label>
@@ -130,7 +131,7 @@ const Register = (props) => {
                             {/* <FontAwesomeIcon icon={faInfoCircle} /> */}
                             4 to 24 characters.<br />
                             Must begin with a letter.<br />
-                            Letters, numbers, underscores,apostrophe,and hyphens allowed.
+                            Letters, numbers, underscores, apostrophe, and hyphens allowed.
                         </p>}
 
                         <label htmlFor="password">
@@ -179,8 +180,9 @@ const Register = (props) => {
 
 
         </form>
+        <section className='button-class'>
         <button className="link-btn" onClick={()=>navigate("/login")}>Already have an account? Login here.</button>
-
+        </section>
         </section>
   )}
   </>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddIngredient from "./AddIngredient";
 import Ingredient from "./Ingredient";
+import './IngredientList.css'
 
 const IngredientList = (prop) => {
   const [ingredients, setIngredients] = useState([]);
@@ -29,12 +30,15 @@ const IngredientList = (prop) => {
       });
   };
   return (
-    <div>
+    <main>
+      <h1>Add Your Craving, then Feast</h1>
+      <section>
       <AddIngredient onSubmit={addNewIngredient} />
       <Ingredient prop={ingredients} removeIngredient={removeIngredient} />
+      </section>
       <button onClick={getRecipes}>Search</button>
       <button onClick={() => setIngredients([])}>Clear</button>
-    </div>
+    </main>
   );
 };
 

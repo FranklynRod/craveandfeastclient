@@ -1,2 +1,4 @@
-/* search..center of page below nave, add description above, add color to button*/
-/* app background coloe */
+section{
+    align-items: center;
+    justify-content: center;
+}
