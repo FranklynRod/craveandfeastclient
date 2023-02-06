@@ -5,11 +5,15 @@ const RecipeList = (prop) => {
   console.log(prop)
   return (
     <div>
-      {prop.recipes.length? 
-        <Recipe prop={prop.recipes[0]}/>: 
-        null}
+      {prop.recipes.length?
+      prop.recipes.map((recipe,index)=>{
+        return(
+          <Recipe key={index} prop={recipe}/>
+        )
+      }): null}
 
       </div>
+
     
 
   )

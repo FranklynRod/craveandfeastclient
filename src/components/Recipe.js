@@ -17,11 +17,22 @@ import LinkIcon from '@mui/icons-material/Link';
 
 const Recipe = (prop) => {
   console.log(prop)
+  const addToFavorites = (recipe) =>{
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ recipe: recipe })
+  };
+  fetch(`http://127.0.0.1:5000/account/Frodriguez/favorite`, requestOptions)
+      .then(response => response.json())
+      .then(data =>console.log(data));
+}
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "#B08401" }} aria-label="recipe">
             CF
           </Avatar>
         }
@@ -38,14 +49,15 @@ const Recipe = (prop) => {
         component="img"
         height="194"
         image={prop.prop.image}
-        alt="image of recipe"
+        alt= {prop.prop.label}
       />
       <CardContent>
-         {
+         {//5 ingredients appear on card
             prop.prop.ingredientLines.slice(0,5).map((line,index)=>{
               return(
                 <Typography key={index}>
                   {line}
+
                 </Typography>
               )
             })
@@ -53,7 +65,8 @@ const Recipe = (prop) => {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-              <FavoriteIcon />
+              <FavoriteIcon onClick={(e)=>addToFavorites(prop.prop)}/>
+            
             </IconButton>
             <IconButton aria-label="share">
             <a href={prop.prop.url} ><LinkIcon /></a>
