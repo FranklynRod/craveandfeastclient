@@ -1,4 +1,10 @@
-.auth-form-container{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.auth-form-container-register{
     padding:5rem;
     border:1px black;
     border-radius: 10px;
@@ -6,10 +12,12 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(79deg,#DED1BD,#faf6f2,#D49E8D);
+    
 }
-.auth-form-container, .register-form{
+.auth-form-container-register, .register-form{
     display:flex; 
     flex-direction: column;   
+    justify-content: center;
     align-items: center;
   /* justify-content: center; */
 }
@@ -18,6 +26,10 @@
     background: white;
     padding:2rem;
     border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* height: */
+    /* width:575px; */
 
 }
 
@@ -30,13 +42,35 @@ label {
 input {
     margin: 0.5rem 0;
 } 
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: grey;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: 1px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
 
 .button-class{
     align-items: center;
     justify-content: center;
 }
 
-.link-btn{
+.link-btn-register{
     background: none;
     padding: 20px;
     border-radius: 10px;
@@ -51,7 +85,7 @@ input {
     
 }
 
-h1 {
+.register-header {
     border: .5em;
     text-align:center;
     border-style: solid;
@@ -60,7 +94,18 @@ h1 {
     color: white;
 
 }
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
 
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
 
+.line {
+    display: inline-block;
+}
 
 

@@ -8,7 +8,7 @@ const RecipeList = (prop) => {
       {prop.recipes.length?
       prop.recipes.map((recipe,index)=>{
         return(
-          <Recipe key={index} prop={recipe}/>
+          <Recipe key={index} prop={recipe} username={prop.username}/>
         )
       }): null}
 

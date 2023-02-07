@@ -5,13 +5,10 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import LinkIcon from '@mui/icons-material/Link';
 
@@ -23,7 +20,7 @@ const Recipe = (prop) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ recipe: recipe })
   };
-  fetch(`http://127.0.0.1:5000/account/Frodriguez/favorite`, requestOptions)
+  fetch(`http://127.0.0.1:5000/account/${prop.username}/favorite`, requestOptions)
       .then(response => response.json())
       .then(data =>console.log(data));
 }
