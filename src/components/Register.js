@@ -91,7 +91,7 @@ try {
 }
 
 return (
-<>
+<section>
 {success ? (
     navigate("/home")
 ) : (
@@ -177,7 +177,7 @@ return (
         </section>
         </section>
   )}
-  </>
+  </section>
 )
 }
 

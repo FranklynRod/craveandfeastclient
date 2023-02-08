@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AddIngredient from "./AddIngredient";
 import Ingredient from "./Ingredient";
 import './IngredientList.css'
 
 const IngredientList = (prop) => {
   const [ingredients, setIngredients] = useState([]);
+  useEffect(()=>{
+    fetch(`http://127.0.0.1:5000/api/recipes/v2?q=[flour, plantain]`)
+      .then((resp) => resp.json())
+      .then(function (data) {
+        prop.setRecipes(data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  },[])
   const addNewIngredient = (ingredient) => {
     if (!ingredients.includes(ingredient) && ingredient !== "") {
       setIngredients([ingredient, ...ingredients]);
@@ -30,14 +40,16 @@ const IngredientList = (prop) => {
       });
   };
   return (
-    <main>
-      <h1>Add Your Craving, then Feast</h1>
-      <section>
+    <main class="container">
+      <h1 className="ingredient-header">Add Your Craving, then Feast</h1>
+      <section className="ingredient-form">
       <AddIngredient onSubmit={addNewIngredient} />
       <Ingredient prop={ingredients} removeIngredient={removeIngredient} />
       </section>
+      <section class="btn-wrapper">
       <button onClick={getRecipes}>Search</button>
       <button onClick={() => setIngredients([])}>Clear</button>
+      </section>
     </main>
   );
 };

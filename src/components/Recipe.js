@@ -12,6 +12,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import LinkIcon from '@mui/icons-material/Link';
 
+
+
 const Recipe = (prop) => {
   console.log(prop)
   const addToFavorites = (recipe) =>{
@@ -26,7 +28,8 @@ const Recipe = (prop) => {
 }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <div style={{float: 'left', width:'25%', margin: "none" , padding: 'none', height: '600px'}}> 
+    <Card sx={{ maxWidth: 345, height:575 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: "#B08401" }} aria-label="recipe">
@@ -70,6 +73,8 @@ const Recipe = (prop) => {
             </IconButton>
       </CardActions>
     </Card>
+    </div>
+    
   );
 };
 

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 .auth-form-container-register{
@@ -9,6 +10,8 @@
     border:1px black;
     border-radius: 10px;
     margin: 0.5rem;
+    padding-bottom: 12rem;
+    padding-top: 12rem;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(79deg,#DED1BD,#faf6f2,#D49E8D);
@@ -24,10 +27,14 @@
 
 .register-form{
     background: white;
-    padding:2rem;
+    padding:8rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
     border-radius: 10px;
     margin-bottom: 2rem;
     margin-top: 2rem;
+
+   
     /* height: */
     /* width:575px; */
 
@@ -87,11 +94,14 @@ input {
 
 .register-header {
     border: .5em;
+    border-left: 8em;
+    border-right: 8em;
     text-align:center;
     border-style: solid;
     border-color: #D49E8D;
     background-color:  #D49E8D;
     color: white;
+    font-size: 25px;
 
 }
 .valid {
