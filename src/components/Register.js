@@ -100,8 +100,8 @@ return (
     <h1 className="register-header">Register</h1>
     <form className="register-form" onSubmit={handleSubmit}>
         <label htmlFor="username" >Username: 
-            <AiOutlineStop className={validName ? "invalid" : "hide"} />
-            <AiOutlineCheckSquare className={validName || !user ? "hide" : "valid"} />
+            <AiOutlineCheckSquare className={validName ? "valid" : "hide"} />
+            <AiOutlineStop className={validName || !user ? "hide" : "invalid"} />
         </label>
         <input
                             type="text"
@@ -126,8 +126,8 @@ return (
 
                         <label htmlFor="password">
                             Password:
-                            <AiOutlineStop className={!validPwd ? "invalid" : "hide"} />
-                            <AiOutlineCheckSquare className={!validPwd && !pwd ? "hide" : "valid"} />
+                            <AiOutlineCheckSquare className={validPwd ? "valid" : "hide"} />
+                            <AiOutlineStop className={validPwd || !pwd ? "hide" : "invalid"} />
                         </label>
                         <input
                             type="password"
@@ -144,14 +144,14 @@ return (
                        {!validPwd &&<p id="pwdnote" className={pwdFocus && !validPwd ? "instructions" : "offscreen"}>
                             <AiFillInfoCircle/>
                             8 to 24 characters.<br />
-                            Must include uppercase and lowercase letters, a number and a special character.<br />
+                            Please use uppercase and lowercase letters, a number and a special character.<br />
                             Allowed special characters: <span aria-label="exclamation mark">!</span> <span aria-label="at symbol">@</span> <span aria-label="hashtag">#</span> <span aria-label="dollar sign">$</span> <span aria-label="percent">%</span>
                         </p>}
 
                         <label htmlFor="confirm_pwd">
                             Confirm Password:
-                            <AiOutlineStop className={validMatch && matchPwd ? "invalid" : "hide"} />
-                            <AiOutlineCheckSquare className={validMatch || !matchPwd ? "hide" : "valid"} />
+                            <AiOutlineCheckSquare className={validMatch && matchPwd ? "valid" : "hide"} />
+                            <AiOutlineStop className={validMatch || !matchPwd ? "hide" : "invalid"} />
                         </label>
                         <input
                             type="password"

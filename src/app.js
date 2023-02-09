@@ -18,7 +18,7 @@ function App() {
       <Route path="/register" element={<Register setUsername={setUsername}/>} />
       <Route path="/login" element={<Login setUsername={setUsername}/>} />
       <Route path="/home" element={<Home prop={username}/>} />
-      <Route path="/profile" element={<Profile prop={username}/>} />
+      <Route path="/profile" element={<Profile username={username}/>} />
       <Route path="/*" element={<FourZeroFour/>} />
 
       </Routes>

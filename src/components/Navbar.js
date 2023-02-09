@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -30,7 +31,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" style={{backgroundColor:"black", color: "white"}}>
   
         <Toolbar>
           <IconButton
@@ -50,7 +51,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button href="/home" sx={{ color: '#fff' }}>Home</Button>
-              <Button href="/profile"sx={{ color: '#fff' }}>Profile</Button>
+              <Link to="/profile"><Button sx={{ color: '#fff' }}>Profile</Button></Link>
               <Button href="/login"sx={{ color: '#fff' }}>Logout</Button>
           </Box>
         </Toolbar>
@@ -63,8 +64,19 @@ const Navbar = () => {
   return (
     <div>
       <DrawerAppBar/>
+      {/* <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/faq" component={Faq} />
+      </Switch>
+    </Router> */}
       </div>
   )
 }
 
 export default Navbar
+
+// 

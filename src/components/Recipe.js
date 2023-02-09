@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -12,7 +12,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import LinkIcon from '@mui/icons-material/Link';
 
+
 const Recipe = (prop) => {
+  const [liked, setLiked] = useState(false)
   console.log(prop)
   /*
 {
@@ -32,6 +34,7 @@ const Recipe = (prop) => {
 
   */
   const addToFavorites = (recipe) =>{
+    setLiked(!liked) 
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -67,7 +70,7 @@ const Recipe = (prop) => {
         alt= {prop.prop.label}
       />
       <CardContent>
-         {//5 ingredients appear on card
+        {//5 ingredients appear on card
             prop.prop.ingredientLines.slice(0,5).map((line,index)=>{
               return(
                 <Typography key={index}>
@@ -80,8 +83,9 @@ const Recipe = (prop) => {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-              <FavoriteIcon onClick={(e)=>addToFavorites(prop.prop)}/>
-            
+              <FavoriteIcon onClick={
+                (e)=>addToFavorites(prop.prop)}
+                htmlColor={liked? "red":"grey"}/>
             </IconButton>
             <IconButton aria-label="share">
             <a href={prop.prop.url} ><LinkIcon /></a>

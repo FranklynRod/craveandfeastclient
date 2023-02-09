@@ -47,8 +47,9 @@ const IngredientList = (prop) => {
       <Ingredient prop={ingredients} removeIngredient={removeIngredient} />
       </section>
       <section class="btn-wrapper">
-      <button onClick={getRecipes}>Search</button>
-      <button onClick={() => setIngredients([])}>Clear</button>
+      <button class="ingredient-btn" onClick={getRecipes}>Search</button>
+      <button class="ingredient-btn" onClick={() => setIngredients([])}>Clear</button>
+      <h2>Tantalize Your Tastbuds Here </h2>
       </section>
     </main>
   );
