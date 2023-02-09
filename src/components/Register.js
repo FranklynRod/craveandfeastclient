@@ -126,8 +126,8 @@ return (
 
                         <label htmlFor="password">
                             Password:
-                            <AiOutlineStop className={validPwd ? "invalid" : "hide"} />
-                            <AiOutlineCheckSquare className={validPwd || !pwd ? "hide" : "valid"} />
+                            <AiOutlineStop className={!validPwd ? "invalid" : "hide"} />
+                            <AiOutlineCheckSquare className={!validPwd && !pwd ? "hide" : "valid"} />
                         </label>
                         <input
                             type="password"

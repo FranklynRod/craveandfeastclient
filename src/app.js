@@ -16,9 +16,9 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path="/register" element={<Register setUsername={setUsername}/>} />
-      <Route path="/login" element={<Login/>} />
+      <Route path="/login" element={<Login setUsername={setUsername}/>} />
       <Route path="/home" element={<Home prop={username}/>} />
-      <Route path="/profile" element={<Profile/>} />
+      <Route path="/profile" element={<Profile prop={username}/>} />
       <Route path="/*" element={<FourZeroFour/>} />
 
       </Routes>

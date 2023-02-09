@@ -1,28 +1,37 @@
 import React from 'react'
-import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { createTheme } from '@mui/material/styles';
+// const drawerWidth = 240;
+// const navItems = ['Home', 'Profile', 'Login'];
 
-const drawerWidth = 240;
-const navItems = ['Home', 'Profile', 'Login'];
+
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#683B2B',
+      darker: '#053e85',
+    },
+    neutral: {
+      main: '#64748B',
+      contrastText: '#fff',
+    },
+  },
+});
 
 function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav">
+  
         <Toolbar>
           <IconButton
             color="inherit"
@@ -37,7 +46,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            CRAVE and FEAST
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button href="/home" sx={{ color: '#fff' }}>Home</Button>

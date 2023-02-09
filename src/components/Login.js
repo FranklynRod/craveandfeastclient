@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const LOGIN_URL = 'http://localhost:5000/auth';
 
-const Login = () => {
+const Login = (prop) => {
     const userRef = useRef();
     const errRef = useRef();
 
@@ -38,6 +38,7 @@ const Login = () => {
                 }
             );
             console.log(JSON.stringify(response));
+            prop.setUsername(user)
             setUser('');
             setPwd('');
             setSuccess(true);
