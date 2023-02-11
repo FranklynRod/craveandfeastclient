@@ -40,7 +40,8 @@ const Recipe = (prop) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ recipe: recipe })
   };
-  fetch(`http://127.0.0.1:5000/account/${prop.username}/favorite`, requestOptions)
+  const username = window.localStorage.getItem("user")
+  fetch(`http://127.0.0.1:5000/account/${username}/favorite`, requestOptions)
       .then(response => response.json())
       .then(data =>console.log(data));
 }

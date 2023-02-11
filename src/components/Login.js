@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect, useContext} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import './Login.css'
 import axios from 'axios';
@@ -39,6 +39,7 @@ const Login = (prop) => {
             );
             console.log(JSON.stringify(response));
             prop.setUsername(user)
+            window.localStorage.setItem("user",user)
             setUser('');
             setPwd('');
             setSuccess(true);

@@ -36,12 +36,14 @@
 
 .btn-wrapper{
     margin-top: 3rem;
-    justify-content: space-around; 
-    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around;  */
+    /* flex-flow: row wrap; */
 }
 
 .ingredient-btn{
-    padding: 3rem;
+    margin-right: 1rem;
 }
 
 /* Add spacing around buttons, add h2 heading, add container around border to form */

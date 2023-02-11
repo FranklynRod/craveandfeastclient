@@ -5,16 +5,16 @@ import './IngredientList.css'
 
 const IngredientList = (prop) => {
   const [ingredients, setIngredients] = useState([]);
-  useEffect(()=>{
-    fetch(`http://127.0.0.1:5000/api/recipes/v2?q=[flour, plantain]`)
-      .then((resp) => resp.json())
-      .then(function (data) {
-        prop.setRecipes(data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  },[])
+  // useEffect(()=>{
+  //   fetch(`http://127.0.0.1:5000/api/recipes/v2?q=[flour, plantain]`)
+  //     .then((resp) => resp.json())
+  //     .then(function (data) {
+  //       prop.setRecipes(data);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // },[])
   const addNewIngredient = (ingredient) => {
     if (!ingredients.includes(ingredient) && ingredient !== "") {
       setIngredients([ingredient, ...ingredients]);

@@ -9,6 +9,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { createTheme } from '@mui/material/styles';
+import CraveFeast from '../media/CraveFeast.png'
+
 // const drawerWidth = 240;
 // const navItems = ['Home', 'Profile', 'Login'];
 
@@ -47,12 +49,12 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            CRAVE and FEAST
+            <img src={CraveFeast} style={{height:'50px',width:'50px'}}/>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button href="/home" sx={{ color: '#fff' }}>Home</Button>
               <Link to="/profile"><Button sx={{ color: '#fff' }}>Profile</Button></Link>
-              <Button href="/login"sx={{ color: '#fff' }}>Logout</Button>
+              <Button href="/login"sx={{ color: '#fff' }} onClick={()=>window.localStorage.removeItem('user')}>Logout</Button>
           </Box>
         </Toolbar>
       </AppBar>

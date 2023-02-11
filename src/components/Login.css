@@ -13,7 +13,7 @@
     padding-top: 12rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(79deg,#DED1BD,#faf6f2,#D49E8D);
+    background-image: linear-gradient(79deg,#DED1BD,#faf6f2,grey);
 }
 .auth-form-container-login, .login-form{
     display:flex; 
@@ -58,9 +58,9 @@ input {
     text-decoration: underline;
     width: 300px;
     /* text-align: center; */
-    background-color:#D49E8D;
+    background-color:grey;
     color:white;
-    border-color: #D49E8D;
+    border-color: grey;
     text-align:center;
     
 }
@@ -71,10 +71,11 @@ input {
     border-right: 6em;
     text-align:center;
     border-style: solid;
-    border-color: #D49E8D;
-    background-color:  #D49E8D;
+    border-color: grey;
+    background-color:  grey;
     color: white;
     font-size: 25px;
+    border-radius: 10px;
 
 
 }

@@ -79,6 +79,7 @@ try {
     //clear state and controlled inputs
     //need value attribrutes on inputs for this
     props.setUsername(user)
+    window.localStorage.setItem("user",user)
     setUser('');
     setPwd('');
     setMatchPwd('');
