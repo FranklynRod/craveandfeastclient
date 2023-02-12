@@ -106,7 +106,7 @@ return (
         </label>
         <input
                             type="text"
-                            id="username"
+                            className="register-inputs"
                             placeholder="Username"
                             ref={userRef}
                             autoComplete="off"
@@ -132,7 +132,7 @@ return (
                         </label>
                         <input
                             type="password"
-                            id="password"
+                            className="register-inputs"
                             placeholder="Password"
                             onChange={(e) => setPwd(e.target.value)}
                             value={pwd}
@@ -157,7 +157,7 @@ return (
                         <input
                             type="password"
                             placeholder="Confirm Password"
-                            id="confirm_pwd"
+                            className="register-inputs"
                             onChange={(e) => setMatchPwd(e.target.value)}
                             value={matchPwd}
                             required
@@ -170,10 +170,10 @@ return (
                         <AiFillInfoCircle/>
                             Must match the first password input field.
                         </p>}
-                    <button onClick={(e)=>handleSubmit(e) }>Register</button>
+                    <button className="register-btn" onClick={(e)=>handleSubmit(e) }>Register</button>
 
         </form>
-        <section className='button-class'>
+        <section className='btn-class'>
         <button className="link-btn-register" onClick={()=>navigate("/login")}>Already have an account? Login here.</button>
         </section>
         </section>

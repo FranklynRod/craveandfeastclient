@@ -51,7 +51,7 @@ const Recipe = (prop) => {
     <Card sx={{ maxWidth: 345, height:575 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "#B08401" }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "#5d6578" }} aria-label="recipe">
             CF
           </Avatar>
         }

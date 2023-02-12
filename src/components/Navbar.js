@@ -33,7 +33,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" style={{backgroundColor:"black", color: "white"}}>
+      <AppBar component="nav" style={{backgroundColor:"#5d6578", color: "white"}}>
   
         <Toolbar>
           <IconButton
@@ -48,13 +48,13 @@ function DrawerAppBar(props) {
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            <img src={CraveFeast} style={{height:'50px',width:'50px'}}/>
+          >CRAVE & FEAST
+            {/* <img alt= 'logo'src={CraveFeast} style={{height:'66px',width:'66px'}}/> */}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button href="/home" sx={{ color: '#fff' }}>Home</Button>
               <Link to="/profile"><Button sx={{ color: '#fff' }}>Profile</Button></Link>
-              <Button href="/login"sx={{ color: '#fff' }} onClick={()=>window.localStorage.removeItem('user')}>Logout</Button>
+              <Button href="/"sx={{ color: '#fff' }} onClick={()=>window.localStorage.removeItem('user')}>Logout</Button>
           </Box>
         </Toolbar>
       </AppBar>

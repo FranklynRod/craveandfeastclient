@@ -13,8 +13,8 @@ const LandingPage = () => {
       
       <section className='home-text'>
       
-      <h1 className='landing-h1'>Welcome</h1>
-      <p>About Crave and Feast</p>
+      <h1 className='landing-h1'>CRAVE & FEAST</h1>
+      <p className='landing-h2'>Welcome to a convenient way to clean out of your fridge and tantilize your tastbuds</p>
       
      </section>
      <Link to="/register" className='link-btn'><button className='landing-home-btn'>Explore</button></Link>

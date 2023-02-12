@@ -49,8 +49,8 @@ const IngredientList = (prop) => {
       <section class="btn-wrapper">
       <button class="ingredient-btn" onClick={getRecipes}>Search</button>
       <button class="ingredient-btn" onClick={() => setIngredients([])}>Clear</button>
-      <h2>Tantalize Your Tastbuds Here </h2>
       </section>
+      <h2 className="tantalize-header">Tantalize Your Tastbuds Here </h2>
     </main>
   );
 };

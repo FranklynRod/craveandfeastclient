@@ -13,7 +13,7 @@
     padding-top: 12rem;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(79deg,#DED1BD,#faf6f2,grey);
+    background-image: linear-gradient(79deg,grey,white, rgb(193, 208, 223));
 }
 .auth-form-container-login, .login-form{
     display:flex; 
@@ -62,6 +62,7 @@ input {
     color:white;
     border-color: grey;
     text-align:center;
+    font-size: 14px;
     
 }
 
@@ -78,4 +79,23 @@ input {
     border-radius: 10px;
 
 
+}
+
+.login-btn{
+    margin: 1em;
+    border-radius: 1em;
+    padding: .5em;
+    cursor: pointer;
+    font-weight: 5em;
+    font-size: 14px;
+    font-family: "Geneva";
+    background-color: rgb(193, 208, 223);
+}
+
+.login-inputs{
+    padding:8px;
+    padding-left: 1em;
+    padding-right: 2em;
+    font-size: 15px;
+    border-color: black;
 }

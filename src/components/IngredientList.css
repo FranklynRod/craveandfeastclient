@@ -14,6 +14,8 @@
     flex-direction: column;
     padding-top: 3.5em;
     padding-bottom: 2.5em;
+    border-style: inset;
+    border-color: black;
     /* justify-content: space-around; */
     /* flex-flow: row wrap; */
     /* flex: 1 100%;
@@ -26,9 +28,12 @@
 .ingredient-header{
     align-items: center;
     justify-content: center;
-    border-color: #B08401;
-    background-color: #B08401;
+    border-color: #5d6578;
+    background-color: #5d6578;
     color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: .5em;
 
 
     /* justify-content: center; */
@@ -46,4 +51,14 @@
     margin-right: 1rem;
 }
 
+.tantalize-header{
+    
+    margin-top: 2em;
+    border-color: #5d6578;
+    background-color: #5d6578;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: .5em;
+}
 /* Add spacing around buttons, add h2 heading, add container around border to form */

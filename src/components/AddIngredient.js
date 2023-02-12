@@ -1,3 +1,4 @@
+import './AddIngredient.css'
 import React, {useState} from 'react'
 
 const AddIngredient = (prop) => {
@@ -12,16 +13,18 @@ const AddIngredient = (prop) => {
   return (
 
     <div>
-      <form>
+      <form class='add-ingredient-form'>
       <input 
+      className="ingredient-input"
       type='text'
       placeholder="Add Ingredient" 
       value={input} 
       name='text'
       onChange={e => setInput(e.target.value)}
       />
-      <button onClick={handleSubmit}>Add Ingredient</button>
-
+      
+      <button className="ingredient-btn" onClick={handleSubmit}>Add Ingredient</button>
+      
       </form>
     </div>
     

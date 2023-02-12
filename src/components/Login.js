@@ -69,7 +69,7 @@ const Login = (prop) => {
                 <input
                     type="text"
                     placeholder="Username"
-                    id="username"
+                    className="login-inputs"
                     ref={userRef}
                     onChange={(e) => setUser(e.target.value)}
                     value={user}
@@ -79,12 +79,12 @@ const Login = (prop) => {
                 <input
                     type="password"
                     placeholder="Password"
-                    id="password"
+                    className="login-inputs"
                     onChange={(e) => setPwd(e.target.value)}
                     value={pwd}
                     required
                 />
-                <button onClick={(e)=>handleSubmit(e)}>Sign In</button>
+                <button className="login-btn" onClick={(e)=>handleSubmit(e)}>Sign In</button>
             </form>
             <button className="link-btn-login" onClick={()=>navigate("/register")}>Don't have an account? Register here.</button>
         </section>

@@ -16,7 +16,9 @@ const Profile = (prop) =>  {
   <div>
       <Navbar/>
       <br/><br/><br/><br/>
-      <p>Welcome {username}</p>
+      <section className="profile-header-container">
+      <h1 className='profile-header'>Let's Eat {username}!</h1>
+      </section>
       {
         favorites?.map((item, index)=>{
             return(

@@ -1,6 +1,6 @@
 import React from "react";
 import { RiCloseCircleFill } from 'react-icons/ri';
-import './Ingredient.css'
+
 
 const Ingredient = ({prop, removeIngredient}) => {
   console.log(prop)

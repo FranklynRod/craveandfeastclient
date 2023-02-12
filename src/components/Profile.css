@@ -1,1 +1,7 @@
 /* center welcome and color from theme add padding arount it */
+.profile-header{
+    text-align: center;
+    padding-bottom: 5em;
+    margin-bottom: 5em;
+    
+}
