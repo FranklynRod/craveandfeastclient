@@ -1,0 +1,13 @@
+.fourohfour-btn{
+    margin: 1em;
+    border-radius: 1em;
+    padding: .5em;
+    cursor: pointer;
+    font-weight: 5em;
+    font-size: 14px;
+    font-family: "Geneva";
+    background-color: rgb(193, 208, 223);
+    align-items: center;
+    justify-content: center;
+}
+
