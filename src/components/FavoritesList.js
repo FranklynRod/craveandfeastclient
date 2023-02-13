@@ -4,9 +4,9 @@ import {mockRecipes} from ".../mockRecipes";
 
 function FavoritesList() {
   return (
-    <div>FavoritesList
+    <>FavoritesList
     {mockRecipes.map(favorite => <Favorite key={favorite.id} {...favorite}/>)}
-    </div>
+    </>
   )
 }
 

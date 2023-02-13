@@ -12,7 +12,7 @@ const AddIngredient = (prop) => {
   
   return (
 
-    <div>
+    <>
       <form class='add-ingredient-form'>
       <input 
       className="ingredient-input"
@@ -26,7 +26,7 @@ const AddIngredient = (prop) => {
       <button className="ingredient-btn" onClick={handleSubmit}>Add Ingredient</button>
       
       </form>
-    </div>
+    </>
     
 )}
 

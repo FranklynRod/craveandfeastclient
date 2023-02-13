@@ -14,7 +14,6 @@ function App() {
   const user=window.localStorage.getItem('user');
   return (
     <div className="App">
-      
       <BrowserRouter>
       <Routes>
       <Route path="/" element={<LandingPage/>} />
@@ -23,7 +22,6 @@ function App() {
       { user && <Route path="/home" element={<Home prop={username}/>} />}
       {user && <Route path="/profile" element={<Profile username={username}/>} />}
       <Route path="/*" element={<FourZeroFour/>} />
-
       </Routes>
       </BrowserRouter>
     </div>

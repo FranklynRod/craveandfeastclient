@@ -9,11 +9,11 @@ import './Home.css'
 const Home = ({prop}) => {
   const [recipes, setRecipes] = useState([])
   return (
-    <div className='container'>
+    <main className='container'>
       <Navbar/>
       <IngredientList setRecipes={setRecipes}/>
       <RecipeList recipes={recipes} username={prop}/>
-    </div>
+    </main>
   
   )
 }

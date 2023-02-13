@@ -9,12 +9,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { createTheme } from '@mui/material/styles';
-import CraveFeast from '../media/CraveFeast.png'
-
-// const drawerWidth = 240;
-// const navItems = ['Home', 'Profile', 'Login'];
-
-
 
 const theme = createTheme({
   palette: {
@@ -49,7 +43,6 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >CRAVE & FEAST
-            {/* <img alt= 'logo'src={CraveFeast} style={{height:'66px',width:'66px'}}/> */}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <Button href="/home" sx={{ color: '#fff' }}>Home</Button>
@@ -64,18 +57,9 @@ function DrawerAppBar(props) {
 
 const Navbar = () => {
   return (
-    <div>
+    <>
       <DrawerAppBar/>
-      {/* <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/faq" component={Faq} />
-      </Switch>
-    </Router> */}
-      </div>
+      </>
   )
 }
 

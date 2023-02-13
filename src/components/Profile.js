@@ -13,7 +13,7 @@ const Profile = (prop) =>  {
   console.log(username)
 
   return (
-  <div>
+  <>
       <Navbar/>
       <br/><br/><br/><br/>
       <section className="profile-header-container">
@@ -26,9 +26,7 @@ const Profile = (prop) =>  {
             )
         })
       }
-      
-    
-  </div>
+  </>
   )
 }
 
