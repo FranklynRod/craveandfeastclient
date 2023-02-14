@@ -17,7 +17,7 @@ const Profile = (prop) =>  {
       <Navbar/>
       <br/><br/><br/><br/>
       <section className="profile-header-container">
-      <h1 className='profile-header'>Let's Eat {username}!</h1>
+      <h1 className='profile-header' aria-label="profile-header">Let's Eat {username}!</h1>
       </section>
       {
         favorites?.map((item, index)=>{

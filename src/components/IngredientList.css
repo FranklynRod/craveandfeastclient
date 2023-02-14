@@ -4,7 +4,9 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
 }
-
+.ingredient-item{
+    display: flex;
+}
 .container{
     align-items: center;
     justify-content: center;
@@ -13,8 +15,8 @@
     flex-direction: column;
     padding-top: 3.5em;
     padding-bottom: 2.5em;
-    border-style: inset;
-    border-color: black;
+    /* border-style: inset;
+    border-color: black; */
 } 
 
 .ingredient-header{
@@ -52,5 +54,9 @@
     padding-left: 1em;
     padding-right: 1em;
     border-radius: .5em;
+}
+.remove-ingredient{
+    border:none;
+    background-color: transparent;
 }
 /* Add spacing around buttons, add h2 heading, add container around border to form */

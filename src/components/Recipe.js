@@ -32,17 +32,17 @@ const Recipe = (prop) => {
   return (
     <main style={{float: 'left', width:'25%', margin: "none" , padding: 'none', height: '600px'}}> 
     <Card sx={{ maxWidth: 345, height:575 }}>
-      <CardHeader
+      <CardHeader aria-label="recipe card"
         avatar={
           <Avatar sx={{ bgcolor: "#5d6578" }} aria-label="recipe">
             CF
           </Avatar>
         }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+        // action={
+        //   <IconButton aria-label="settings">
+        //     <MoreVertIcon />
+        //   </IconButton>
+        // }
         title = {prop.prop.label}
         //capitalized first letter in cuisine type
         subheader={prop.prop.cuisineType[0].charAt(0).toUpperCase() + prop.prop.cuisineType[0].slice(1)}
@@ -52,8 +52,9 @@ const Recipe = (prop) => {
         height="194"
         image={prop.prop.image}
         alt= {prop.prop.label}
+        aria-label="image of recipe"
       />
-      <CardContent>
+      <CardContent aria-label="ingredients">
         {//5 ingredients appear on card
             prop.prop.ingredientLines.slice(0,5).map((line,index)=>{
               return(

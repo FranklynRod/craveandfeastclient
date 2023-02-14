@@ -166,7 +166,7 @@ return (
                             onFocus={() => setMatchFocus(true)}
                             onBlur={() => setMatchFocus(false)}
                         />
-                       {!validMatch &&<p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
+                    {!validMatch &&<p id="confirmnote" className={matchFocus && !validMatch ? "instructions" : "offscreen"}>
                         <AiFillInfoCircle/>
                             Must match the first password input field.
                         </p>}
@@ -177,7 +177,7 @@ return (
         <button className="link-btn-register" onClick={()=>navigate("/login")}>Already have an account? Login here.</button>
         </section>
         </section>
-  )}
+)}
   </section>
 )
 }

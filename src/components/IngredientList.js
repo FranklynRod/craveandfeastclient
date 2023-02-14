@@ -40,17 +40,17 @@ const IngredientList = (prop) => {
       });
   };
   return (
-    <main class="container">
+    <main className="container">
       <h1 className="ingredient-header">Add Your Craving, then Feast</h1>
       <section className="ingredient-form">
-      <AddIngredient onSubmit={addNewIngredient} />
+      <AddIngredient id="add-ingredient"onSubmit={addNewIngredient} />
       <Ingredient prop={ingredients} removeIngredient={removeIngredient} />
       </section>
-      <section class="btn-wrapper">
-      <button class="ingredient-btn" onClick={getRecipes}>Search</button>
-      <button class="ingredient-btn" onClick={() => setIngredients([])}>Clear</button>
+      <section className="btn-wrapper">
+      <button className="ingredient-btn" onClick={getRecipes}>Search</button>
+      <button className="ingredient-btn" onClick={() => setIngredients([])}>Clear</button>
       </section>
-      <h2 className="tantalize-header">Tantalize Your Tastbuds Here </h2>
+      <h2 className="tantalize-header">Tantalize Your Tastebuds Here </h2>
     </main>
   );
 };

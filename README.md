@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Crave and Feast
+***
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crave and Feast was created for the user who doesn't have stocked fridge and always has to create a meal in a pinch. This full stack application recipe aggregate website will provide nutrient dense and culturally diverse meals sure to tantilize anyones tastebuds. Crave and Feast uses React, Javascript on the frontend and Python and Flask on the backend while using Google Firebase Firestore for its databse. 
 
-## Available Scripts
+## Demo
+
+
+## Features
+
+Get the current location of the device;
+Get the last known location;
+Get continuous location updates;
+Check if location services are enabled on the device;
+Translate an address to geocoordinates and vice verse (a.k.a. Geocoding);
+Calculate the distance (in meters) between two geocoordinates;
+Check the availability of Google Play Services (on Android only).
+
+## API
+***
+### Edamame
+***
+Crave and Feast uses Edamame
+
+get faves
+get recipes
+auth user
+reg user
+
+
+## Installation
 
 In the project directory, you can run:
+install python,
+pip install -r requirement.txt
+FLASK_ENV=development flask run
 
-### `npm start`
+install node
+`npm install`
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+sign up for firebase
+create project
+create firestore database
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

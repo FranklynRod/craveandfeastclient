@@ -1,0 +1,25 @@
+.skip-link-offscreen{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+
+.profile-link{
+    text-decoration: none;
+}
+
+.skip-link-offscreen:focus {
+    left: 55em;
+    width: auto;
+    height: auto;
+}
+
+#jump {
+    background-color: white;
+    padding: 10px;
+}
+

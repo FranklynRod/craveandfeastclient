@@ -12,9 +12,10 @@ const AddIngredient = (prop) => {
   
   return (
 
-    <>
-      <form class='add-ingredient-form'>
+    <div id='ingredient-container'>
+      <form class='add-ingredient-form' id='form'>
       <input 
+      id='ingredient'
       className="ingredient-input"
       type='text'
       placeholder="Add Ingredient" 
@@ -26,7 +27,7 @@ const AddIngredient = (prop) => {
       <button className="ingredient-btn" onClick={handleSubmit}>Add Ingredient</button>
       
       </form>
-    </>
+    </div>
     
 )}
 
