@@ -1,45 +1,54 @@
 # Crave and Feast
-***
 
-Crave and Feast was created for the user who doesn't have stocked fridge and always has to create a meal in a pinch. This full stack application recipe aggregate website will provide nutrient dense and culturally diverse meals sure to tantilize anyones tastebuds. Crave and Feast uses React, Javascript on the frontend and Python and Flask on the backend while using Google Firebase Firestore for its databse. 
+Crave and Feast is a website application designed to help busy people create culturally diverse, nutrient dense meals. This web app was created to reduce food waste by encouraging users to use food that is already at home. 
+
+Crave and Feast uses React frontend and Python and Flask on the backend while using Google Firebase Cloud Firestore for its databse. It also aggregates recipes by using an recipe search API. Users are able to register or sign into account and search for recipes. They are also able to save or remove saved recipes from their profile page
 
 ## Demo
-
+***
+{Demo Link}
 
 ## Features
-
-Get the current location of the device;
-Get the last known location;
-Get continuous location updates;
-Check if location services are enabled on the device;
-Translate an address to geocoordinates and vice verse (a.k.a. Geocoding);
-Calculate the distance (in meters) between two geocoordinates;
-Check the availability of Google Play Services (on Android only).
+***
+* Users can register and sign-in to access account
+* Users can find recipes based on ingredients typed into dashboard
+* Users can add favorite recipes to profile page by hearting recipe card
+* Users can remove favorite recipes from profile page by hearting within profile page by hearting recipe card
+* Accessible navigation using keyboard
 
 ## API
 ***
-### Edamame
+
+Crave and Feast uses Edamam Recipe Search API. An API call was completed to 
+* Get recipes based on ingredients searched
+* Get recipes that populate homepage
+
+## Cloud Firestore
 ***
-Crave and Feast uses Edamame
 
-get faves
-get recipes
-auth user
-reg user
-
+Crave and Feast used firestore to manage user data
+* User registration
+* Authenticate user login information
+* Add favorite recipes
+* Delete favorite recipes
 
 ## Installation
+***
+#### Frontend
+* Fork this repository. 
+* This will make a copy of the source code onto your github
+Clone your forked repository by using the command 
+```git clone```
+Install node by using this command
+* `npm install`
+Run project on your local machine with this command
+* `npm start`
 
-In the project directory, you can run:
-install python,
-pip install -r requirement.txt
-FLASK_ENV=development flask run
+#### Google Firebase
+* Sign up for Firebase
+* Create Project
+* Create Firestore Database
 
-install node
-`npm install`
-npm start
 
-sign up for firebase
-create project
-create firestore database
+
 

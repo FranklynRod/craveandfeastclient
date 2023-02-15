@@ -41,7 +41,7 @@ const IngredientList = (prop) => {
   };
   return (
     <main className="container">
-      <h1 className="ingredient-header">Add Your Craving, then Feast</h1>
+      <h1 className="ingredient-header">What's in your fridge?</h1>
       <section className="ingredient-form">
       <AddIngredient id="add-ingredient"onSubmit={addNewIngredient} />
       <Ingredient prop={ingredients} removeIngredient={removeIngredient} />
