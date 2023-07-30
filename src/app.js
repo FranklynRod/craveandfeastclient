@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import { useState } from "react";
 import LandingPage from "./components/LandingPage";
 import './App.css'
+import Checkout from "./components/Checkout";
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/login" element={<Login setUsername={setUsername}/>} />
       { user && <Route path="/home" element={<Home prop={username}/>} />}
       {user && <Route path="/profile" element={<Profile username={username}/>} />}
+      <Route path="/checkout" element={<Checkout/>} />
       <Route path="/*" element={<FourZeroFour/>} />
       </Routes>
       </BrowserRouter>

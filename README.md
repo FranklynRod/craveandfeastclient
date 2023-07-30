@@ -5,10 +5,13 @@ Crave and Feast is a website application designed to help busy people create cul
 Crave and Feast uses React frontend and Python and Flask on the backend while using Google Firebase Cloud Firestore for its databse. It also aggregates recipes by using an recipe search API. Users are able to register or sign into account and search for recipes. They are also able to save or remove saved recipes from their profile page
 ![screenshot of the landing page](src/media/CraveandFeast.png)
 ## Demo
+***
 
-{Demo Link}
+[{Crave and Feast Demo Link}](https://www.loom.com/share/e364226cb1d64206ba988a5233a4691a)
+
 
 ## Features
+***
 
 * Users can register and sign-in to access account
 * Users can find recipes based on ingredients typed into dashboard
@@ -17,12 +20,14 @@ Crave and Feast uses React frontend and Python and Flask on the backend while us
 * Accessible navigation using keyboard
 
 ## API
+***
 
 Crave and Feast uses Edamam Recipe Search API. An API call was completed to 
 * Get recipes based on ingredients searched
 * Get recipes that populate homepage
 
 ## Cloud Firestore
+***
 
 Crave and Feast used firestore to manage user data
 * User registration
@@ -31,6 +36,7 @@ Crave and Feast used firestore to manage user data
 * Delete favorite recipes
 
 ## Installation
+***
 
 #### Frontend
 * Fork this repository. 
