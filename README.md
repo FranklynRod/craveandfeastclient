@@ -2,7 +2,7 @@
 
 Crave and Feast is a website application designed to help busy people create culturally diverse, nutrient dense meals. This web app was created to reduce food waste by encouraging users to use food that is already at home. 
 
-Crave and Feast uses React frontend and Python and Flask on the backend while using Google Firebase Cloud Firestore for its databse. It also aggregates recipes by using an recipe search API. Users are able to register or sign into account and search for recipes. They are also able to save or remove saved recipes from their profile page
+Crave and Feast uses React frontend and Python and Flask on the backend while using Google Firebase Cloud Firestore for its database. It also aggregates recipes by using an recipe search API. Users are able to register or sign into account and search for recipes. They are also able to save or remove saved recipes from their profile page
 ![screenshot of the landing page](src/media/CraveandFeast.png)
 ## Demo
 ***
